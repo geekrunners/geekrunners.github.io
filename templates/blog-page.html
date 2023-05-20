@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block menu %}
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href="/blog" class="nav-link active" aria-current="page">Blog</a></li>
+    <li class="nav-item"><a href="/races" class="nav-link">Races</a></li>
+    <li class="nav-item"><a href="/tools" class="nav-link">Tools</a></li>
+    <li class="nav-item"><a href="/terminology" class="nav-link">Terminology</a></li>
+    <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+  </ul>
+{% endblock %}
+
+{% block content %}
+  <h1 class="title">
+    {{ page.title }}
+  </h1>
+  <p class="subtitle"><strong>{{ page.date }}</strong></p>
+  {{ page.content | safe }}
+{% endblock content %}
