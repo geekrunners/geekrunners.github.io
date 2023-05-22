@@ -28,6 +28,7 @@ template = "terminology.html"
 
 * **Fartlek** – a continuous run in which periods of faster running are mixed with periods of easy or moderate running.
 * **Field** – the number of participants registered to a race.
+* **FKT**: Fastest Known Time - the fastest time to complete a running or hiking route. Those who want to challenge a FKT, do it alone or in small groups, collecting enough and credible evidences of the feat.
 
 ## G
 
