@@ -36,7 +36,8 @@ template = "terminology.html"
 
 ## H
 
-* **HM**: Half-marathon
+* **HM**: _Half-Marathon_
+* **HR**: _Heart Rate_ - The number of times the heart beats in a minute.
 
 ## L
 
