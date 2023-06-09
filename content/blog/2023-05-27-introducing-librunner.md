@@ -4,31 +4,31 @@ authors = ["Hildeberto Mendonca",]
 description = "A good deal of being a geek is to code or understand coding. We love objectivity and hate subjectivity, so coding is the ultimate objectivity sophistication. If something can be expressed in numbers and logic, then code is the best way to materialize and document it. That's why we created a programming library where we can express all the calculations related to running and let other geeks use and contribute to."
 +++
 
-LibRunner is an open source library published on GitHub and distributed by create.io. We decided to write it in Rust for the following reasons:
+[LibRunner](https://docs.rs/librunner/0.4.0/librunner/) is an open-source library published on [GitHub](https://github.com/geekrunners/librunner) and distributed by [creates.io](https://crates.io/crates/librunner). We decided to write it in [Rust](https://www.rust-lang.org) for the following reasons:
 
-* **Performance**: Rust is fast, compared to C, and often replacing C in production code due to its memory safety guarantees. The domain of sports often requires real-time features, so Rust allows calculations to be as fast as they can possibly be, without the uncertainties of garbage collection.
+* **Performance**: Rust is fast, compared to C, and often replaces C/C++ in production code due to its memory safety guarantees. The domain of sports often requires real-time features, so Rust allows calculations to be as fast as they can be, without the overhead of garbage collection.
 
-* **Popular**: Rust has been elected by a annual StackOverflow survey as the most loved language for 5 consecutive years. It has a large and strong community of users and contributors as well as a great number of sponsors, from small start-ups to global players, investing on the language and its ecosystem. It implements the state of the art on development experience, making developers happy about the process of building high performance software.
+* **Popular**: Rust has been elected by an [annual Stack Overflow survey](https://insights.stackoverflow.com/survey/) as [the most loved language for 7 consecutive years](https://www.reddit.com/r/rust/comments/vi7pre/rust_tops_stackoverflow_survey_2022_as_the_most/). It has a large and strong community of users and contributors as well as a great number of sponsors, from small start-ups to global players, investing in the language and its ecosystem. It implements the state-of-the-art on developer experience, making developers happy about the process of building high-performance software.
 
-* **Reusable**: Publishing LibRunner on creates.io is so straightforward that we did it as soon as its first feature was available. Today, any Rust project can add it as a dependency and use it for running-related applications. In addition to that, LibRunner can also be used by other programming languages through bridges. We intend to support other languages on demand, ensuring the same underline logic across platforms and technologies. LibRunner can also be used on the browser thanks to the rich Rust support for WebAssembly.
+* **Reusable**: Publishing LibRunner on [creates.io](https://crates.io) is so straightforward that we did it as soon as its first feature was available. Today, any Rust project can add it as a dependency and use it for running-related applications. In addition to that, LibRunner can also be used by other programming languages through bridges. We intend to support other languages on demand, ensuring the same underline logic across platforms and technologies. LibRunner can also be used on the browser thanks to the rich Rust support for [WebAssembly](https://www.rust-lang.org/what/wasm).
 
-* **High Level**, yet native, writing Rust code feels like writing in a high level language such as Kotlin, Scala, and C#. Yet, the result is native, platform specific, and self-contained software.
+* **High Level**, yet native, writing Rust code feels like writing in a high-level language such as Kotlin, Scala, and C#. Yet, the result is native, platform-specific, and self-contained software.
 
-LibRunner currently offers the following features:
+Here are some features offered by LibRunner:
 
-* given duration and distance, it calculates the average speed and pace to complete the distance within that duration.
+* calculates the average speed and pace to complete a distance within a duration
 
-* given duration and pace, calculates the distance of a race.
+* calculates the distance of a race from duration and pace
 
-* given a set of splits, calculates the duration and distance of the race.
+* calculates the duration and distance of the race from a set of splits
 
-* calculates the pace of positive and negative splits of a race.
+* calculates the pace of positive and negative splits of a race
 
 We are constantly improving and adding new features to it as we learn more about the field. We are also open to suggestions, demands, and contributions.
 
-In the LibRunner documentation, we have examples of code for every feature. These examples are guaranteed to work because the Cargo testing tool runs them against the current version. You can copy and paste them into your code and make the necessary changes to the problem you are solving.
+In the [LibRunner documentation](https://docs.rs/librunner/0.4.0/librunner/), we have examples of code for every feature. These examples are guaranteed to work because the testing tool runs them against the current version. You can copy and paste them into your code and make the necessary changes to the problem you are solving.
 
-Let's go through quick steps to get start with LibRunner. We start a Rust project from zero to unlock they way to hero:
+Let's go through these quick steps to get started with LibRunner. We start a Rust project from zero to unlock the way to hero:
 
 1. visit https://rustup.rs and install rustup, an installer for the programming language Rust. Once installed, update and check the toolchain:
 
@@ -54,7 +54,7 @@ Let's go through quick steps to get start with LibRunner. We start a Rust projec
       librunner = "0.4.0"
       ```
 
-   4.2. replace the content of the file `src/main.rs` by the code below:
+   4.2. replace the content of the file `src/main.rs` with the code below:
 
       ```rust
       use std::time::Duration;
