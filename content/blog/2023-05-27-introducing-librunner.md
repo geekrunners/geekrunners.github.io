@@ -1,7 +1,7 @@
 +++
 title = "Introducing LibRunner"
 authors = ["Hildeberto Mendonca",]
-description = "A good deal of being a geek is to code or understand coding. We love objectivity and hate subjectivity, so coding is the ultimate objectivity sophistication. If something can be expressed in numbers and logic, then code is the best way to materialize and document it. That's why we created a programming library where we can express all the calculations related to running and let other geeks use and contribute to."
+description = "A good deal of being a geek is to code or understand coding. We love objectivity and hate subjectivity, so coding is the ultimate objectivity sophistication. If something can be expressed in numbers and logic, then code is the best way to materialize and document it. That's why we created a programming library where we can express all the calculations related to running and let other geeks use and contribute to it."
 +++
 
 [LibRunner](https://docs.rs/librunner/0.4.0/librunner/) is an open-source library published on [GitHub](https://github.com/geekrunners/librunner) and distributed by [creates.io](https://crates.io/crates/librunner). We decided to write it in [Rust](https://www.rust-lang.org) for the following reasons:
@@ -60,6 +60,7 @@ Let's go through these quick steps to get started with LibRunner. We start a Rus
       use std::time::Duration;
       use librunner::running::{Race, MetricRace, ImperialRace};
       use librunner::utils::convert;
+      use librunner::utils::formatter;
 
       fn main() {
           let duration = convert::to_duration(4, 0, 0); // 04:00:00
@@ -67,10 +68,10 @@ Let's go through these quick steps to get started with LibRunner. We start a Rus
           let m_average_pace = m_race.average_pace();
 
           println!("The pace to run {}km in {}h is approximately {}.{}/km at {:.2}km/h", 
-                   (m_race.distance as f32 / 1000.0), 
-                   (duration.as_secs() / 60 / 60), 
-                   (m_average_pace.as_secs() / 60),
-                   (m_average_pace.as_secs() % 60),
+                   (m_race.distance as f32 / 1000.0),    // meter to kilometer
+                   formatter::format_duration(duration), 
+                   (m_average_pace.as_secs() / 60),      // seconds to minutes
+                   (m_average_pace.as_secs() % 60),      // remaining seconds
                    (m_race.speed() * 3.6));
 
           let i_race: ImperialRace = Race::new(46112, duration);
