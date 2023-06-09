@@ -12,10 +12,13 @@
 {% endblock %}
 
 {% block content %}
-  <ul>
-    <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
-    {% for page in section.pages %}
-      <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="row">
+  <div class="col-9">
+  {% for page in section.pages %}
+    <h1><a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      <span class="lead">by <b>{{ page.authors[0] }}</b></span></h1>
+    <p class="lead">{{ page.description }}</p>
+  {% endfor %}
+  </div>
+</div>
 {% endblock content %}

@@ -13,8 +13,14 @@
 
 {% block content %}
   <h1 class="title">
-    {{ page.title }}
+    {{ page.title }}<div class="lead">by <b>{{ page.authors[0] }}</b></div>
   </h1>
   <p class="subtitle"><strong>{{ page.date }}</strong></p>
-  {{ page.content | safe }}
+
+  <div class="row">
+    <div class="col-9">
+      <p class="lead">{{ page.description }}</p>
+      {{ page.content | safe }}
+    </div>
+  </div>
 {% endblock content %}

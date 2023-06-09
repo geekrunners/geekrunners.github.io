@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <p>Everything that makes running cooler than it actually is.</p>
+  {% set blog = get_section(path="blog/_index.md") %}
+  {% set post = blog.pages[0] %}
+  <h5 style="color: cadetblue;">Highlight</h5>
+  <h1>{{ post.title }} <span class="lead">by <b>{{ post.authors[0] }}</b></span></h1>
+  <p class="lead">{{ post.description }}</p>
+  <a href="{{ post.permalink | safe }}" class="btn btn-lg btn-light fw-bold">Learn more</a>
 {% endblock content %}
