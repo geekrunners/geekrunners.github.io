@@ -1,8 +1,8 @@
 +++
 title = "Introducing LibRunner"
+authors = ["Hildeberto Mendonca",]
+description = "A good deal of being a geek is to code or understand coding. We love objectivity and hate subjectivity, so coding is the ultimate objectivity sophistication. If something can be expressed in numbers and logic, then code is the best way to materialize and document it. That's why we created a programming library where we can express all the calculations related to running and let other geeks use and contribute to."
 +++
-
-A good deal of being a geek is to code or understand coding. We love objectivity and hate subjectivity, so coding is the ultimate objectivity sophistication. If something can be expressed in numbers and logic, then code is the best way to materialize and document it. That's why we created a programming library where we can express all the calculations related to running and let other geeks use and contribute to.
 
 LibRunner is an open source library published on GitHub and distributed by create.io. We decided to write it in Rust for the following reasons:
 
