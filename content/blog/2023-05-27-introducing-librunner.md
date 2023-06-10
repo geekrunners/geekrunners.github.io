@@ -47,11 +47,15 @@ Let's go through these quick steps to get started with LibRunner. We start a Rus
 
 4. it prints "Hello World", meaning you have a working code to start from. Open the project in your favourite code editor and make two changes: 
 
-   4.1. add LibRunner to the project's dependencies in the file `Cargo.toml`:
+   4.1. add LibRunner to the project's dependencies:
+   
+       $ cargo add librunner
+
+     It adds a new dependency to your `Cargo.toml` file:
 
       ```toml
       [dependencies]
-      librunner = "0.4.0"
+      librunner = "0.5.0"
       ```
 
    4.2. replace the content of the file `src/main.rs` with the code below:
@@ -67,21 +71,19 @@ Let's go through these quick steps to get started with LibRunner. We start a Rus
           let m_race: MetricRace = Race::new(42195, duration);
           let m_average_pace = m_race.average_pace();
 
-          println!("The pace to run {}km in {}h is approximately {}.{}/km at {:.2}km/h", 
+          println!("The pace to run {}km in {}h is approximately {}/km at {:.2}km/h", 
                    (m_race.distance as f32 / 1000.0),    // meter to kilometer
                    formatter::format_duration(duration), 
-                   (m_average_pace.as_secs() / 60),      // seconds to minutes
-                   (m_average_pace.as_secs() % 60),      // remaining seconds
+                   formatter::format_duration(m_average_pace.as_secs()),
                    (m_race.speed() * 3.6));
 
           let i_race: ImperialRace = Race::new(46112, duration);
           let i_average_pace = i_race.average_pace();
 
-          println!("The pace to run {} miles in {}h is approximately {}.{}/mile at {:.2}mph", 
+          println!("The pace to run {} miles in {}h is approximately {}/mile at {:.2}mph", 
                    (i_race.distance as f32 / 1760.0), 
-                   (duration.as_secs() / 60 / 60),
-                   (i_average_pace.as_secs() / 60),
-                   (i_average_pace.as_secs() % 60),
+                   formatter::format_duration(duration.as_secs()),
+                   formatter::format_duration(i_average_pace.as_secs()),
                    (i_race.speed() * 3.6));
       }
       ```
@@ -91,7 +93,7 @@ Let's go through these quick steps to get started with LibRunner. We start a Rus
 
     which generates the following output:
 
-       The pace to run 42.195km in 4h is approximately 5.41/km at 10.55km/h
-       The pace to run 26.2 miles in 4h is approximately 9.9/mile at 11.53mph
+       The pace to run 42.195km in 04:00:00h is approximately 05.41/km at 10.55km/h
+       The pace to run 26.2 miles in 04:00:00h is approximately 09.09/mile at 11.53mph
 
 That's it! You are now using LibRunner in no time. Keep an eye on this website to learn more about future updates and all things geeks love about running.
