@@ -67,7 +67,7 @@ Let's go through these quick steps to get started with LibRunner. We start a Rus
       use librunner::utils::formatter;
 
       fn main() {
-          let duration = convert::to_duration(4, 0, 0); // 04:00:00
+          let duration = converter::to_duration(4, 0, 0); // 04:00:00
           let m_race: MetricRace = Race::new(42195, duration);
           let m_average_pace = m_race.average_pace();
 
