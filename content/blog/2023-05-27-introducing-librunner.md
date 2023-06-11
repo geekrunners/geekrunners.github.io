@@ -63,7 +63,7 @@ Let's go through these quick steps to get started with LibRunner. We start a Rus
       ```rust
       use std::time::Duration;
       use librunner::running::{Race, MetricRace, ImperialRace};
-      use librunner::utils::convert;
+      use librunner::utils::converter;
       use librunner::utils::formatter;
 
       fn main() {
