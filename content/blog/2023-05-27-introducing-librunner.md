@@ -84,7 +84,7 @@ Let's go through these quick steps to get started with LibRunner. We start a Rus
                    (i_race.distance as f32 / 1760.0), 
                    formatter::format_duration(duration.as_secs()),
                    formatter::format_duration(i_average_pace.as_secs()),
-                   (i_race.speed() * 3.6));
+                   (i_race.speed() * 2.04545));
       }
       ```
 5. then run the project again:
