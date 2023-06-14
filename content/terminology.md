@@ -39,6 +39,10 @@ template = "terminology.html"
 * **HM**: _Half-Marathon_
 * **HR**: _Heart Rate_ - The number of times the heart beats in a minute.
 
+## I
+
+* **IAAF**: _International Association of Athletics Federations_ - Also known as [World Athletics](https://worldathletics.org), is the governing body of the sport of athletics (track and field) that encompasses a wide range of events involving running, walking, jumping, and throwing.
+
 ## K
 
 * **KOM**: _King of the Mountain_ - the term used by [Strava](https://www.strava.com) to indicate that you achieved the fastest time on a segment.
