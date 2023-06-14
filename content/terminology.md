@@ -39,6 +39,10 @@ template = "terminology.html"
 * **HM**: _Half-Marathon_
 * **HR**: _Heart Rate_ - The number of times the heart beats in a minute.
 
+## K
+
+* **KOM**: _King of the Mountain_ - the term used by [Strava](https://www.strava.com) to indicate that you achieved the fastest time on a segment.
+
 ## L
 
 * **LSD**: _Long Slow Distance_ - a long easy run as part of the preparation to run long distance races.
@@ -62,6 +66,10 @@ template = "terminology.html"
 
 * **PB**: _Personal Best_ - the same as PR.
 * **PR**: _Personal Record_ - indicates the best time a runner completed a distance (marathon, 10k, etc.) or a race (Toronto Marathon, Trail Race, etc).
+
+## Q
+
+* **QOM**: _Queen of the Mountain_ - the term used by [Strava](https://www.strava.com) to indicate that you achieved the fastest time on a segment.
 
 ## S
 
