@@ -45,8 +45,9 @@ template = "terminology.html"
 
 ## M
 
+* **MPH**: _Miles Per Hour_ - unit of distance that indicates how many miles a runner completed in a hour.
 * **MPM**: _Minutes Per Mile_ - pace unit that indicates the time to complete a mile.
-* **MPW**: _Miles Per Week_ - unit of volume of running that indicates how many miles a runner completed in a week.
+* **MPW**: _Miles Per Week_ - unit of distance that indicates how many miles a runner completed in a week.
 
 ## N
 
