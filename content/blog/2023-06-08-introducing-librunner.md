@@ -10,21 +10,11 @@ description = "A good deal of being a geek is to code or understand coding. We l
 
 * **Popular**: Rust has been elected by an [annual Stack Overflow survey](https://insights.stackoverflow.com/survey/) as [the most loved language for 7 consecutive years](https://www.reddit.com/r/rust/comments/vi7pre/rust_tops_stackoverflow_survey_2022_as_the_most/). It has a large and strong community of users and contributors as well as a great number of sponsors, from small start-ups to global players, investing in the language and its ecosystem. It implements the state-of-the-art on developer experience, making developers happy about the process of building high-performance software.
 
-* **Reusable**: Publishing LibRunner on [creates.io](https://crates.io) is so straightforward that we did it as soon as its first feature was available. Today, any Rust project can add it as a dependency and use it for running-related applications. In addition to that, LibRunner can also be used by other programming languages through bridges. We intend to support other languages on demand, ensuring the same underline logic across platforms and technologies. LibRunner can also be used on the browser thanks to the rich Rust support for [WebAssembly](https://www.rust-lang.org/what/wasm).
+* **Reusable**: Publishing LibRunner on [creates.io](https://crates.io) is so straightforward that we did it as soon as its first feature was available. Today, any Rust project can add it as a dependency and use it for running-related applications. In the browser space, LibRunner can be used by [WebAssembly](https://www.rust-lang.org/what/wasm) applications. In addition to that, LibRunner can also be used by other programming languages through bridges. We intend to support other languages in the future in a on demand basis, ensuring the same underline logic across platforms and technologies.
 
 * **High Level**, yet native, writing Rust code feels like writing in a high-level language such as Kotlin, Scala, and C#. Yet, the result is native, platform-specific, and self-contained software.
 
-Here are some features offered by LibRunner:
-
-* calculates the average speed and pace to complete a distance within a duration
-
-* calculates the distance of a race from duration and pace
-
-* calculates the duration and distance of the race from a set of splits
-
-* calculates the pace of positive and negative splits of a race
-
-We are constantly improving and adding new features to it as we learn more about the field. We are also open to suggestions, demands, and contributions.
+LibRunner can help you calculate the average speed and pace to complete a distance within a duration, calculate the distance of a race from duration and pace, calculate the duration and distance of the race from a set of splits, calculate the pace of positive and negative splits of a race and so many other features that we are constantly adding to it as we learn more about the field. We are also open to [suggestions, demands, and contributions](https://github.com/geekrunners/librunner/issues/).
 
 In the [LibRunner documentation](https://docs.rs/librunner/0.4.0/librunner/), we have examples of code for every feature. These examples are guaranteed to work because the testing tool runs them against the current version. You can copy and paste them into your code and make the necessary changes to the problem you are solving.
 
@@ -55,7 +45,7 @@ Let's go through these quick steps to get started with LibRunner. We start a Rus
 
       ```toml
       [dependencies]
-      librunner = "0.5.0"
+      librunner = "0.6.0"
       ```
 
    4.2. replace the content of the file `src/main.rs` with the code below:
@@ -69,22 +59,20 @@ Let's go through these quick steps to get started with LibRunner. We start a Rus
       fn main() {
           let duration = converter::to_duration(4, 0, 0); // 04:00:00
           let m_race: MetricRace = Race::new(42195, duration);
-          let m_average_pace = m_race.average_pace();
 
           println!("The pace to run {}km in {}h is approximately {}/km at {:.2}km/h", 
-                   (m_race.distance as f32 / 1000.0),    // meter to kilometer
-                   formatter::format_duration(duration), 
-                   formatter::format_duration(m_average_pace.as_secs()),
-                   (m_race.speed() * 3.6));
+                   converter::to_km(m_race.distance),
+                   formatter::format_duration(m_race.duration()), 
+                   formatter::format_duration(m_race.average_pace()),
+                   converter::to_km_h(m_race.speed()));
 
           let i_race: ImperialRace = Race::new(46112, duration);
-          let i_average_pace = i_race.average_pace();
 
           println!("The pace to run {} miles in {}h is approximately {}/mile at {:.2}mph", 
-                   (i_race.distance as f32 / 1760.0), 
-                   formatter::format_duration(duration.as_secs()),
-                   formatter::format_duration(i_average_pace.as_secs()),
-                   (i_race.speed() * 2.04545));
+                   converter::to_mile(i_race.distance), 
+                   formatter::format_duration(i_race.duration()),
+                   formatter::format_duration(i_race.average_pace()),
+                   converter::to_mph(i_race.speed()));
       }
       ```
 5. then run the project again:
