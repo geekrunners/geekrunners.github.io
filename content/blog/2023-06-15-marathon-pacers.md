@@ -6,7 +6,7 @@ description = "A pacer is an experienced runner that commits to other runners to
 
 Pacers are human beings like every other runner. They can make mistakes, get injured, get tired, and so many other unforeseen situations. When we decide to follow a pacer we have to accept that anything can happen in such a long course, which might result in glory or frustration. It is about accepting a variable we can't control. I had a [personal experience with a pacer](https://www.hildeberto.com/sports/2023/05/calgary-marathon.html) who was going faster than the average pace for the goal time. Most of my fuel was burned in the first half of the course, leaving me exhausted in the second half.
 
-We are going to use [LibRunner](https://crates.io/crates/librunner) to investigate the case. In summary, [the 4:10h pacer of the Calgary Marathon 2023 was running too fast for more than 30 km](https://www.strava.com/activities/9159132215/overview). But first, what would be the average pace we would expect from him to finish the marathon in 4:10 hours?
+Let's use [LibRunner](https://crates.io/crates/librunner) to investigate the case. If you are not familiar with LibRunner yet, read [an introduction we published previously] to learn how to run the following code. As published in Strava, [the 4:10h pacer of the Calgary Marathon 2023](https://www.strava.com/activities/9159132215/overview) was running too fast for more than 30 km. But first, what is the average pace we would expect from him to finish the marathon in 4:10 hours?
 
 ```rust
 use librunner::running::{Race, MetricRace};
