@@ -78,7 +78,9 @@ template = "terminology.html"
 
 ## S
 
-* **Sarcopenia**: an age-related, involuntary loss of skeletal muscle mass and strength. It’s a process that starts around the 4th decade of life, declining in a linear fashion, with up to 50% of mass being lost by the 8th decade of life.
+* **Sarcopenia**: an age-related, involuntary loss of skeletal muscle mass and strength. It’s a process that starts around the 4th decade of life, declining in a linear fashion, with up to 50% of mass being lost by the 8th decade of life.a
+
+* **SPM**: _Steps Per Minute_ - also known as cadence.
 
 ## W
 
