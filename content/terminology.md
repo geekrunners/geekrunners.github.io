@@ -29,6 +29,7 @@ template = "terminology.html"
 * **Fartlek** – a continuous run in which periods of faster running are mixed with periods of easy or moderate running.
 * **Field** – the number of participants registered to a race.
 * **FKT**: _Fastest Known Time_ - the fastest time to complete a running or hiking route. Those who want to challenge a FKT, do it alone or in small groups, collecting enough and credible evidences of the feat.
+* **FTP**: _Functional Threshold Power_ - the power a runner can hold for a significant amount of time. The unit used to express power is Watt (W).
 
 ## G
 
@@ -78,8 +79,7 @@ template = "terminology.html"
 
 ## S
 
-* **Sarcopenia**: an age-related, involuntary loss of skeletal muscle mass and strength. It’s a process that starts around the 4th decade of life, declining in a linear fashion, with up to 50% of mass being lost by the 8th decade of life.a
-
+* **Sarcopenia**: an age-related, involuntary loss of skeletal muscle mass and strength. It’s a process that starts around the 4th decade of life, declining in a linear fashion, with up to 50% of mass being lost by the 8th decade of life.
 * **SPM**: _Steps Per Minute_ - also known as cadence.
 
 ## W
