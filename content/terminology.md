@@ -33,6 +33,7 @@ template = "terminology.html"
 ## G
 
 * **GP**: _Gender Place_ - general position of the runner by gender.
+* **GPS**: _Global Positioning System_ - a global network of satellites that provide accurate positioning and timing through devices that can process their signals. Most of watches for runners are equipped with GPS antenna to track the running course, distance, and pace.
 
 ## H
 
