@@ -23,6 +23,7 @@ template = "terminology.html"
 ## E
 
 * **EMR**: _Early Morning Run_ - some people may refer to an early morning run with this acronym, but it is commonly known as Electronic Medical Record.
+* **EPOC**: _Excess Post-Exercise Oxygen Consumption_ - higher rate of oxygen consumption, compared to resting, after completing a workout. It lasts for the time the body needs to get back to normal after the disturbance caused by the exercise.
 
 ## F
 
