@@ -56,6 +56,7 @@ template = "terminology.html"
 
 ## M
 
+* **MET**: _Metabolic Equivalents_ - the amount of oxygen consumed while sitting at rest. A simple and practical procedure for expressing the energy cost of physical activities as a multiple of the resting metabolic rate.
 * **MPH**: _Miles Per Hour_ - unit of distance that indicates how many miles a runner completed in a hour.
 * **MPM**: _Minutes Per Mile_ - pace unit that indicates the time to complete a mile.
 * **MPW**: _Miles Per Week_ - unit of distance that indicates how many miles a runner completed in a week.
