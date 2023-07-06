@@ -83,6 +83,7 @@ template = "terminology.html"
 
 * **Sarcopenia**: an age-related, involuntary loss of skeletal muscle mass and strength. It’s a process that starts around the 4th decade of life, declining in a linear fashion, with up to 50% of mass being lost by the 8th decade of life.
 * **SPM**: _Steps Per Minute_ - also known as cadence.
+* **Stride**: the length between feet while performing a step. It also defines very short sprints of one minute or less.
 
 ## W
 
